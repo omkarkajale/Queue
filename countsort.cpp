@@ -1,18 +1,21 @@
 #include <stdio.h>
 void countingSort(int arr[], int n) {
-  int arr1[10];
-  int x = arr[0];
-  for (int i = 1; i < n; i++) {
-    if (arr[i] > x)
-      x = arr[i];
+		  
+		  int arr1[10];
+		  int x = arr[0];
+		  for (int i = 1; i < n; i++) {
+		    if (arr[i] > x){
+			
+		      x = arr[i];}
   }
 
-  int count_arr[10];
-  for (int i = 0; i <= x; ++i) {
-    count_arr[i] = 0;
+			  int count_arr[10];
+			  for (int i = 0; i <= x; ++i) {
+			    count_arr[i] = 0;
   }
 
-  for (int i = 0; i < n; i++) {
+  for (int i = 0; i < n; i++) 
+  {
     count_arr[arr[i]]++;
   }
 
@@ -33,9 +36,9 @@ void countingSort(int arr[], int n) {
 
 void display(int arr[], int n) {
   for (int i = 0; i < n; ++i) {
-    printf("%d  ", arr[i]);
+    printf("%d", arr[i]);
   }
-  printf("\n");
+ printf("\n");
 }
 
 int main() {
